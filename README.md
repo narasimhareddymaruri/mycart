@@ -1,3 +1,8 @@
+Created a simple e-commerce app using https://fakestoreapi.com/ API with basic functionalities like, selecting a category of items, sorting, searching. will add more functionalities to it in future.
+access it here :https://mycart-mmk.vercel.app/
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
