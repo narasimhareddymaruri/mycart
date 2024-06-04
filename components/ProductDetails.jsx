@@ -30,7 +30,7 @@ function ProductDetails() {
       {prod == null ? <p>..loading the product details</p> :
         <>
         <header>
-          <Link to="/"><button onClick={()=>{setPagenum(pagenum)}}>Back</button></Link>
+          <Link to="/"><button onClick={()=>{setPagenum(pagenum)}} className="back_button">Back</button></Link>
         </header>
           <div className='each_prod'>
             <div className='prouct_image' >
