@@ -2,19 +2,24 @@ import React from 'react'
 import {useState} from "react"
 
 function Profile() {
-  const [details,setDetails]=useState({});
+  // const [details,setDetails]=useState({});
 
-  function setProfile(){
+  // function setProfile(){
 
    
-  }
+  // }
 
 
 
   return (
 
     <>
-      {
+    <h1>This is profile page</h1>
+    <img src="../src/assets/we_are_coding.png"/>
+
+
+
+      {/* {
         Object.keys(details).length==0?<>
         <h4>enter the details</h4>
         <div style={{display:"flex", width:"300px",flexDirection:"column" }}>
@@ -31,7 +36,7 @@ function Profile() {
         </>:<h1>This is profile page</h1>
 
 
-      }
+      } */}
       
     </>
   )

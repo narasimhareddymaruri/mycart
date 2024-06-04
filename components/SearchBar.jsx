@@ -15,10 +15,10 @@ function SearchBar({input,setInput,setDirection}) {
             </div>
             <div className="sort_arrows">
               <p className="sort_word">Sort</p>
-              <button className="sort_increase" onClick={() => { setDirection(1) }} >
+              <button className="sort_increase" onClick={() => { setDirection("increasing") }} >
                 <ArrowUpwardIcon />
               </button>
-              <button className="sort_decrease" onClick={() => { setDirection(-1) }} >
+              <button className="sort_decrease" onClick={() => { setDirection("decreasing") }} >
                 <ArrowDownwardIcon />
               </button>
 

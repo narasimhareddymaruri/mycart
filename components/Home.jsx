@@ -18,7 +18,7 @@ function Home() {
   const [product, setProduct] = useState(null);
   const [input, setInput] = useState("");
   let [modifiedArray, setArray] = useState(product);
-  let [direction, setDirection] = useState(0);
+  let [direction, setDirection] = useState("default");
   let [category, setCategory] = useState("all_categories");
   // let [pagenum, setPagenum] = useState(1);
   // const [pageSize,setPageSize]=useState(4);
