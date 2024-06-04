@@ -48,8 +48,9 @@ header{
 }
 main{
   display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   
-  grid-template-columns: 280px 280px 280px 280px;
+  /* grid-template-columns: 280px 280px 280px 280px; */
 }
 .product_image{
   width:100px;
