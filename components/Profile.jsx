@@ -15,7 +15,7 @@ function Profile() {
 
     <>
     <h1>This is profile page</h1>
-    <img src="../src/assets/we_are_coding.png"/>
+    <img src="../src/assets/we_are_coding.png" alt="feature will come soon"/>
 
 
 
