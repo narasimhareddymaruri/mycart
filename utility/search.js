@@ -1,6 +1,6 @@
 import SelectInput from "@mui/material/Select/SelectInput";
 
-export default function searchResults(input,product){
+export default function searchResults(input,product,setInput){
   let modifiedArray=product;
   if(input!=""){
 
@@ -13,7 +13,8 @@ export default function searchResults(input,product){
         return productLowerCase.includes(inputLowerCase)
       }
     )
-   
+
+  
   return modifiedArray
 }else{
   

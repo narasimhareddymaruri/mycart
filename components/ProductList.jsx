@@ -1,6 +1,5 @@
 import React from 'react'
-import searchResults from '../utility/search';
-import sort_products from '../utility/sort';
+
 
 function ProductList({modifiedArray}) {
   return (

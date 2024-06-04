@@ -2,16 +2,22 @@
 
 
 export default function sort_products(array,val){
-  let newArray=array.slice();
-  
-  if (val == 1) {
-    newArray = newArray.sort((item1, item2) => (item1.price - item2.price));
-    return newArray
+  if(array==null|| array.length==0){
+    return array
   }
-  else {
-     newArray = newArray.sort((item1, item2) => (item2.price - item1.price));
-    return newArray
-  };
+  let newArray=array.slice();
+  if(val!=0){
+    if (val == 1) {
+      newArray = newArray.sort((item1, item2) => (item1.price - item2.price));
+      return newArray
+    }
+    else {
+       newArray = newArray.sort((item1, item2) => (item2.price - item1.price));
+      return newArray
+    };
+
+  }
+  return array
 
 }
 
