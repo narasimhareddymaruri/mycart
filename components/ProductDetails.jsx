@@ -1,10 +1,12 @@
 import React from 'react'
-import { useState, useEffect } from "react"
+import { useState, useEffect,useContext } from "react"
 import { useParams } from "react-router-dom"
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
+import PaginationContext from './contexts/PaginationContext';
 
 
 function ProductDetails() {
+  const [pagenum,setPagenum,pageSize,setPageSize]=useContext(PaginationContext);
 
   const { id } = useParams();
 
@@ -28,11 +30,11 @@ function ProductDetails() {
       {prod == null ? <p>..loading the product details</p> :
         <>
         <header>
-          <Link to="/"><h1>home</h1></Link>
+          <Link to="/"><button onClick={()=>{setPagenum(pagenum)}}>Back</button></Link>
         </header>
           <div className='each_prod'>
-            <div className="each_product_image">
-              <img src={prod.image}  />
+            <div className='prouct_image' >
+              <img src={prod.image} className="each_product_image" />
             </div>
             <div className="each_prod_details">
             <h1 className="each_product_title" >{prod.title}</h1>
